@@ -112,8 +112,14 @@
 #activity {
 	margin-top: 11px;
 }
-
-#activity>li {
+#activity ul{
+	display: box;
+	display: -webkit-flex;
+	display: flex;
+}
+#activity ul li {
+	-webkit-flex: 1;
+	flex: 1;
 	width: 50%;
 	position: relative;
 	display: inline-block;
@@ -122,12 +128,7 @@
 	background-size: auto 80%;
 	vertical-align: middle;
 }
-
-#activity>li:nth-child(2n) {
-	margin-left: -8px;
-}
-
-#activity>li:nth-child(2n):before {
+#activity ul li:nth-child(2n):before {
 	left: 0px;
 	position: absolute;
 	top: 0;
@@ -139,45 +140,45 @@
 	background-color: #c8c7cc;
 }
 
-#activity>li>div {
+#activity ul li>div {
 	margin: 0 auto;
 	position: relative;
 	padding: 11px 6%;
 }
 
-#activity>li> div > h3 {
+#activity ul li> div > h3 {
 	font-weight: 100;
 	line-height: 20px;
 	font-size: 1.7rem;
 	color: #d31459;
 }
 
-#activity>li:nth-child(2)> div > h3 {
+#activity ul li:nth-child(2)> div > h3 {
 	color: #ff503e;
 }
 
-#activity>li:nth-child(3)> div > h3 {
+#activity ul li:nth-child(3)> div > h3 {
 	color: #8cb914;
 }
 
-#activity>li:nth-child(4)> div > h3 {
+#activity ul li:nth-child(4)> div > h3 {
 	color: #fbb90c;
 }
 
-#activity>li> div > .countdown {
+#activity ul li> div > .countdown {
 	height: 18px;
 	margin-top: 5px;
 	margin-bottom: 0;
 }
 
-#activity>li> div > .countdown > span {
+#activity ul li> div > .countdown > span {
 	float: left;
 	margin-right: 3px;
 	font-size: 1.3rem;
 	color: #4C4C4C;
 }
 
-#activity>li> div > .countdown i {
+#activity ul li> div > .countdown i {
 	position: relative;
 	float: left;
 	height: inherit;
@@ -195,23 +196,23 @@
 	font-size: 12px;
 }
 
-#activity>li> div > .countdown i:nth-of-type(3n) {
+#activity ul li> div > .countdown i:nth-of-type(3n) {
 	background: none;
 	width: 5px;
 	color: #1f1f1f;
 	margin-right: 0;
 }
 
-#activity>li> div > .countdown i.no {
+#activity ul li> div > .countdown i.no {
 	margin-right: 0;
 }
 
-#activity>li> div > .time {
+#activity ul li> div > .time {
 	color: #da4276;
 	font-size: 1.1rem;
 }
 
-#activity>li> div > .desc {
+#activity ul li> div > .desc {
 	color: #9e9e9e;
 	font-size: 1.1rem;
 	padding-bottom: 22px;
@@ -233,7 +234,7 @@
 
 
 /*热销榜*/
-
+.hot-section{background-color: #fff;}
 .hot_h3 {
 	width: 100%;
 	font-size: 1.5rem;
@@ -278,21 +279,20 @@
 	display: inline;
 	background-color: #efeff4;
 }
-
+.clearfloat:after{
+	content: "";
+	clear:both;
+	display:block;
+}
 #hot_list1,
 #hot_list2 {
 	width: 100%;
-	display: inline-block;
-}
-
-#hot_list2 {
-	margin-top: -3px;
+	display: block;
 }
 
 #hot_list1>li,
 #hot_list2>li {
 	display: inline-block;
-	/*margin-left: -8px;*/
 	vertical-align: middle;
 	float: left;
 }
