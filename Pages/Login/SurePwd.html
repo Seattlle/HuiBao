@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable = no,initial-scale = 1,minimum-scale =1,maximum-scale = 1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>确认密码</title>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<script src="../../js/zepto.min.js"></script>
+		<link href="../../css/login.css" rel="stylesheet" />
+	</head>
+
+	<body class="lr">
+		<div class="header">
+			<a id="hrefReturn" href="javascript:void(0)"><i class="i-return2">返回</i></a> 确认密码
+		</div>
+		<form action="/Login/">
+			<div class="input">
+				<input type="password" id="user_pwd" placeholder="新密码" />
+			</div>
+			<div class="input">
+				<input type="password" id="user_pwd2" placeholder="确认密码" />
+			</div>
+			<input type="button" id="btnSub" value="提交" />
+		</form>
+		<script src="../../js/Encrypt.js"></script>
+		<script>
+			//  $("#btnSub").on("tap", function () {
+			//      if ($("#user_pwd").val() == $("#user_pwd2").val()) {
+			//          $.ajax({
+			//              url: "/Login/ModifyPwd" + "&v=" + new Date().getTime(),
+			//              data: { "newPwd": Encrypt($("#user_pwd").val()) },
+			//              success: function (data) {
+			//                  if (data==1) {
+			//                      alert("找回密码成功！");
+			//                      location.href = "/Home/Index" + "?v=" + new Date().getTime();
+			//                  } else {
+			//                      alert("出错啦，请再试一次！");
+			//                  }
+			//              }
+			//          })
+			//      } else {
+			//          alert("两次输入密码不正确！");
+			//      }
+			//
+			//  })
+		</script>

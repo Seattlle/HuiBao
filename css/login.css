@@ -1,0 +1,47 @@
+﻿.mui-content{
+	background: transparent;
+}
+.lr{background: url(../images/login/left.png) repeat-x;	background-size: cover;}
+/* 登入 */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: rgba(255,255,255,.7);}
+input:-moz-placeholder, textarea:-moz-placeholder{rgba(255,255,255,.7);}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{rgba(255,255,255,.7);}
+.header{background: none;}
+form {width:74%;margin:60px 13%;z-index:3;text-align: center;}
+form .logo{width:76%;height:auto;margin:0px auto 90px auto;border-radius: 0;}
+.input{height:45px;line-height:45px;margin-bottom: 14px;border: 1px solid rgba(255,255,255,.7);border-radius: 45px;text-align:center;}
+input {width:100%;border-radius:4px}
+input[type='text'],input[type='tel'], input[type='password'] {width:90%;height: 100%;font-size:1.3rem;text-align: left;background: transparent;color:#ffffff;margin-bottom: 0;border:none}
+input[type='submit'],input[type='button'],.lr>a{border:none;font-size:1.9rem;margin-top:6px;background:#fb8a4a;height:45px;text-align:center;line-height:35px;color:#FFFFFF;border-radius:39.5px;}
+form > p {width:100%;position: relative;margin-top: 8px;color:rgba(255,255,255,.7);line-height:12px;}
+form > p a{color:rgba(255,255,255,.7);display:inline-block;font-size:1.2rem;}
+form > p .border-r:after{height: 12px;background-color: rgba(255,255,255,.7);top:4px;}
+#Login{padding-right: 3px;}
+#Register{padding-left: 5px;}
+/* 注册 */
+form > span {height:40px;width:100%;margin-top:12px;display:block}
+form > span input[type='text'] {width:60%;height:45px;border-right:0;margin:0;float:left;box-sizing:border-box;margin-left: 5%;}
+form > span input[type='button'] {margin:0;width:35%;float:right;border-radius:0 39.5px 39.5px 0;font-size:1em}
+form > label{text-decoration:underline;line-height:16px;width:100%;font-size:1.2rem;display:block;color:#FFFFFF;margin-bottom: 14px;text-align: left;}
+form > label i{margin-top: -3px;display: inline-block;position:relative;width:16px;height:16px;margin-right:6px;background:url('../images/login/check.png') no-repeat center;background-size:16px; vertical-align: middle;}
+form > label i.active{background:url('../images/login/checked.png') no-repeat;background-size:16px;}
+form > label em{color:#FFFFFF}
+form .clear{height:45px;line-height:45px;margin-bottom: 14px;border: 1px solid rgba(255,255,255,.7);border-radius: 45px;text-align:center;}
+form img{width:100%;margin:0;height:45px;border-radius: 0 39.5px 39.5px 0;}
+/* 找回密码2 */
+body > a {display:block;width:78.125%;margin:0 auto 15px;border-radius:4px}
+body > a:first-of-type {margin-top:24px}
+
+.lr .mui-checkbox{
+	width: 18px;
+	height: 18px;
+	top: -3px;
+}
+.lr .mui-checkbox input[type=checkbox]{
+	width: 18px;
+	height: 18px;
+}
+.lr .mui-checkbox input[type=checkbox]:before{
+	font-size: 18px;
+	color:#FFFFFF;
+}

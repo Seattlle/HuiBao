@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable = no,initial-scale = 1,minimum-scale =1,maximum-scale = 1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<link href="../../css/login.css" rel="stylesheet" />
+	</head>
+
+	<body class="lr">
+		<div class="mui-inner-wrap">
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<form>
+						<img src="../../images/login/Welcome.png" class="logo">
+						<div class="input">
+							<input type="tel" id="user_name" name="name" placeholder="用户名" />
+						</div>
+						<div class="input">
+							<input type="tel" id="user_phone" name="phone" placeholder="手机号" />
+						</div>
+						<span class="clear">
+					        <input type="text" id="txtValidateCode" placeholder="验证码" />
+					        <abbr style="height: 45px; width: 35%; float: right;overflow:hidden">
+					            <img id="valiCode" style="cursor: pointer;" src="http://www.bt.com/Login/GetValidateCode" alt="验证码" />
+					        </abbr>
+					    </span>
+						<div class="input">
+							<input type="password" id="user_pwd" name="pwd" placeholder="密码" />
+						</div>
+						<div class="input">
+							<input type="text" value="" id="user_agentCode" name="agentCode" placeholder="推荐码(可选)" />
+						</div>
+						<label>
+							<div class="mui-checkbox">
+								<input name="checkbox1" value="Item 3" type="checkbox">
+							</div>
+							阅读并同意用户注册协议</label>
+						<input type="button" id="SubRegister" value="注册" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Encrypt.js"></script>
+	</body>
+	<script>
+		mui.init();
+		mui('#offCanvasContentScroll').scroll();
+	</script>
+
+</html>
+
+<!--
+<script>
+    $("#SubRegister").on("click", function () {
+        var $phone = $("#user_phone"),
+            $pwd = $("#user_pwd"),
+            $txtValidateCode = $("#txtValidateCode"),
+            $agentCode = $("#user_agentCode");
+        if (!base.isPhone($.trim($phone.val()))) {
+            alert("手机号码格式错误!");
+            return;
+        }
+        if ($pwd.val() == "") {
+            alert("密码不能为空!");
+            return;
+        }
+        if ($txtValidateCode.val() == "") {
+            alert("验证码不能为空!");
+            return;
+        }
+        if ($("#isTrue").hasClass("active")) {
+            $.ajax({
+                url: "/Login/SubRegister" + "?v=" + new Date().getTime(),
+                type: "Get",
+                data: { "phone": $phone.val(), "pwd": Encrypt($pwd.val()), "validateCode": $txtValidateCode.val(), "agentCode": $agentCode.val(), },
+                success: function (data) {
+                    if (data == 1) {
+                        location.href = "/Home/Index";
+                    } else if (data == 0) {
+                        $("#user_pwd").empty();
+                        alert("注册失败！");
+                    } else if (data==2) {
+                        $("#user_pwd").empty();
+                        alert("该手机已经注册！");
+                    } else {
+                        $("#user_pwd").empty();
+                        alert("验证码错误！");
+                    }
+                }
+            });
+        } else {
+            alert("请勾选使用条款!")
+        }
+    });
+
+    //点击刷新验证码
+    $("#valiCode").on("tap", function () {
+        this.src = "/Login/GetValidateCode?time=" + (new Date()).getTime();
+    });
+
+    //使用条款toggleClass
+    $("label").on("click", function () {
+        $(this).children("i").toggleClass("active");
+    });
+</script>-->

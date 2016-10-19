@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/user.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<!--<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>-->
+				<h1 class="mui-title">我的钱包</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+
+						<section class="wallet01">
+							<ul>
+								<li>
+									<span></span>
+									<span>扫一扫</span>
+									<span></span>
+								</li>
+								<li>
+									<span></span>
+									<span>余额</span>
+									<span>￥<em>500</em></span>
+								</li>
+								<li>
+									<span></span>
+									<span>银行卡</span>
+									<span>1</span>
+								</li>
+							</ul>
+						</section>
+
+						<!--优惠劵-->
+						<section class="wallet02">
+							<p>
+								优惠劵
+								<a href="#">
+									领取更多
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</a>
+							</p>
+						</section>
+						<ul class="wallet03">
+							<li>
+								<p>
+									<span>
+											<i class="mui-badge">￥</i><em>500</em>
+										</span>
+									<span>
+										<span>全场通用</span>
+									<span>无门槛使用</span>
+									<a href="#">立即使用</a>
+									</span>
+								</p>
+								<p>
+									2015.12.01-2015.12.31
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>
+											<i class="mui-badge">￥</i><em>500</em>
+										</span>
+									<span>
+											<span>全场通用</span>
+									<span>无门槛使用</span>
+									<a href="#">立即使用</a>
+									</span>
+								</p>
+								<p>
+									2015.12.01-2015.12.31
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>
+											<i class="mui-badge">￥</i><em>500</em>
+										</span>
+									<span>
+										<span>全场通用</span>
+									<span>无门槛使用</span>
+									<a href="#">立即使用</a>
+									</span>
+								</p>
+								<p>
+									2015.12.01-2015.12.31
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>
+											<i class="mui-badge">￥</i><em>500</em>
+										</span>
+									<span>
+										<span>全场通用</span>
+									<span>无门槛使用</span>
+									<a href="#">立即使用</a>
+									</span>
+								</p>
+								<p>
+									2015.12.01-2015.12.31
+								</p>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			mui('#offCanvasContentScroll').scroll();
+		</script>
+	</body>
+
+</html>

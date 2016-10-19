@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单列表</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/order.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+				<h1 class="mui-title">订单列表</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll orderList">
+					<!--内容主体-->
+					<div class="main">
+						<div id="slider" class="mui-slider">
+							<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<a class="mui-control-item mui-active" href="#item1mobile">
+									全部
+								</a>
+								<a class="mui-control-item" href="#item2mobile">
+									待付款
+								</a>
+								<a class="mui-control-item" href="#item3mobile">
+									代发货
+								</a>
+								<a class="mui-control-item" href="#item4mobile">
+									待收货
+								</a>
+								<a class="mui-control-item" href="#item5mobile">
+									待评价
+								</a>
+							</div>
+							<div id="sliderProgressBar" class="mui-slider-progress-bar"></div>
+							<div class="mui-slider-group">
+								<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+									<div id="scroll1" class="mui-scroll-wrapper">
+										<div class="mui-scroll">
+											<ul class="mui-table-view">
+												<li class="mui-table-view-cell border_t">
+													<div>
+														<i></i>
+														<a href="#" class="">
+															<span>深圳华尔兹科技有限公司</span>
+															<i class="mui-icon mui-icon-arrowright"></i>
+														</a>
+														<span>已发货</span>
+													</div>
+													<div class="product">
+														<img src="../../images/index/jiezhi.png" />
+														<div>
+															<div>
+																<span>18K金钻石女戒0.5ct钻石女戒18K金钻石女戒18K金钻石女戒0.5ct钻石女戒18K金钻石女戒</span>
+																<span>手寸:<em>16</em></span>
+															</div>
+															<div>
+																<span>￥<em>4988.00</em></span>
+																<span>×<em>1</em></span>
+															</div>
+														</div>
+													</div>
+													<div class="border_b">
+														<span>共<em>1</em>件商品</span>
+														<span>合计:￥<em>4988.00</em></span>
+													</div>
+													<div>
+														<button type="button" class="mui-btn mui-btn-outlined">
+															延长收货
+														</button>
+														<button type="button" class="mui-btn mui-btn-outlined confirm">
+															确认收货
+														</button>
+													</div>
+												</li>
+												<li class="mui-table-view-cell border_t">
+													<div>
+														<i></i>
+														<a href="#" class="">
+															<span>深圳华尔兹科技有限公司</span>
+															<i class="mui-icon mui-icon-arrowright"></i>
+														</a>
+														<span>已发货</span>
+													</div>
+													<div class="product">
+														<img src="../../images/index/jiezhi.png" />
+														<div>
+															<div>
+																<span>18K金钻石女戒0.5ct钻石女戒18K金钻石女戒18K金钻石女戒0.5ct钻石女戒18K金钻石女戒</span>
+																<span>手寸:<em>16</em></span>
+															</div>
+															<div>
+																<span>￥<em>4988.00</em></span>
+																<span>×<em>1</em></span>
+															</div>
+														</div>
+													</div>
+													<div class="border_b">
+														<span>共<em>1</em>件商品</span>
+														<span>合计:￥<em>4988.00</em></span>
+													</div>
+													<div>
+														<button type="button" class="mui-btn mui-btn-outlined">
+															延长收货
+														</button>
+														<button type="button" class="mui-btn mui-btn-outlined confirm">
+															确认收货
+														</button>
+													</div>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="item2mobile" class="mui-slider-item mui-control-content">
+									<div id="scroll2" class="mui-scroll-wrapper">
+										<div class="mui-scroll">
+											<div class="mui-loading">
+												<div class="mui-spinner">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div id="item3mobile" class="mui-slider-item mui-control-content">
+									<div id="scroll3" class="mui-scroll-wrapper">
+										<div class="mui-scroll">
+											<div class="mui-loading">
+												<div class="mui-spinner">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div id="item4mobile" class="mui-slider-item mui-control-content">
+									<div id="scroll4" class="mui-scroll-wrapper">
+										<div class="mui-scroll">
+											<div class="mui-loading">
+												<div class="mui-spinner">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div id="item5mobile" class="mui-slider-item mui-control-content">
+									<div id="scroll5" class="mui-scroll-wrapper">
+										<div class="mui-scroll">
+											<div class="mui-loading">
+												<div class="mui-spinner">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#tabbar">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-chat">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">列表</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-sms">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">活动区</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-map">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-map">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">个人中心</span>
+				</a>
+			</nav>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//			mui('#offCanvasContentScroll').scroll();
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				var item4 = document.getElementById('item4mobile');
+				var item5 = document.getElementById('item5mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 300);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 300);
+						}
+					} else if (e.detail.slideNumber === 3) {
+						if (item4.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item4.querySelector('.mui-scroll').innerHTML = html2;
+							}, 300);
+						}
+					} else if (e.detail.slideNumber === 4) {
+						if (item5.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item5.querySelector('.mui-scroll').innerHTML = html2;
+							}, 300);
+						}
+					}
+				});
+			})(mui);
+			$(function() {
+				$(".product img").each(function(){
+					$(this).css("height", $(this).width());
+				});
+			});
+		</script>
+	</body>
+
+</html>

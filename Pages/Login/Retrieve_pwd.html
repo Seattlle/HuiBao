@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable = no,initial-scale = 1,minimum-scale =1,maximum-scale = 1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>忘记密码</title>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<script src="../../js/zepto.min.js"></script>
+		<link href="../../css/login.css" rel="stylesheet" />
+	</head>
+
+	<body class="lr">
+		<div class="header">
+			<a id="hrefReturn" href="javascript:void(0)"><i class="i-return2">返回</i></a> 忘记密码
+		</div>
+		<style>
+			.gray {
+				background: #8D9092!important;
+			}
+			
+			form .clear {
+				background: url(../../images/login/login_input.png) no-repeat;
+				background-size: 100% 100%;
+				height: 45px;
+				line-height: 45px;
+				margin-bottom: 14px;
+			}
+			
+			form img {
+				width: 100%;
+				margin: 0;
+				height: 45px;
+				border-radius: 0 39.5px 39.5px 0;
+			}
+			
+			#btnSenCode {
+				background: rgba(243, 68, 68, 0.6);
+				color: #FFFFFF;
+				font-size: 1.5rem;
+			}
+		</style>
+		<form action="/Login/">
+			<div class="input">
+				<input type="tel" id="user_phone" placeholder="手机号" />
+			</div>
+			<span class="clear" style="overflow:hidden;position:relative;margin-top:0">
+            <input type="text" id="txtValidateCode1" placeholder="输入验证码" />
+            <abbr style="height: 45px; width: 35%; float: right;overflow:hidden">
+                <img id="valiCode"src="http://www.bt.com/Login/GetValidateCode" alt="验证码" />
+            </abbr>
+        </span>
+			<span class="clear">
+        <input id="txtValidateCode" type="text" placeholder="输入手机验证码" />
+        <input id="btnSenCode" type="button" value="发送验证码" />
+    </span>
+			<input type="button" id="subNextTap" value="下一步" />
+		</form>
+	</body>
+
+</html>
+<!--<script>
+			$("#btnSenCode").on("tap", function () {
+			        if ($(this).hasClass("gray")) {
+			            return false;
+			        }
+			        if ($("#user_phone").val() != "") {
+			            var i = 60;
+			            $("#btnSenCode").val(i + "s后重发").addClass("gray");
+			            var t = setInterval(function () {
+			                i--;
+			                $("#btnSenCode").val(i + "s后重发");
+			                if (i < 0) {
+			                    $("#btnSenCode").val("发送验证码");
+			                    $("#btnSenCode").removeClass("gray");
+			                    clearInterval(t);
+			                }
+			            }, 1000);
+			            $.ajax({
+			                url: "/User/GetCheckMsg",
+			                data: { "mobile": $("#user_phone").val()},
+			                success: function (data) {
+			                    if (data == "00") {
+			                        alert("验证码发送成功,请注意查收");
+			                    } else if (data == "-1") {
+			                        alert("账户输入有误,请重新输入");
+			                    }
+			                     else{
+			                        alert("验证码发送失败,请稍后");
+			                    }
+			                }
+			            });
+			        } else {
+			            alert("请输入手机号码和账号！");
+			        }
+			    });
+			
+			    //点击刷新验证码
+			    $("#valiCode").on("tap", function () {
+			        this.src = "/Login/GetValidateCode?time=" + (new Date()).getTime();
+			    });
+			
+			    //下一步
+			    $("#subNextTap").on("tap", function () {
+			        var $user_account = $("#user_account"),
+			            $user_phone = $("#user_phone"),
+			            $txtValidateCode1 = $("#txtValidateCode1"),
+			            $txtValidateCode = $("#txtValidateCode");
+			        //if ($user_account.val() == "") {
+			        //    alert("账号不能为空!");
+			        //    return;
+			        //}
+			        if (!base.isPhone($.trim($user_phone.val()))) {
+			            alert("手机号码格式错误!");
+			            return;
+			        }
+			        if ($txtValidateCode1.val() == "") {
+			            alert("图形验证码不能为空!");
+			            return;
+			        } else {
+			            if (!$(this).hasClass("show")) {
+			                $.post("/Login/ifCode", { "validateCode": $txtValidateCode1.val() }, function (data) {
+			                    if (data == "0") {
+			                        alert("图形验证码无效");
+			                        return;
+			                    } else {
+			                        $(".clear").show(3000);
+			                        $("#subNextTap").addClass("show");
+			                    }
+			                });
+			            }
+			        }
+			        if ($(this).hasClass("show")) {
+			            if ($txtValidateCode.val() == "") {
+			                alert("验证码不能为空!");
+			                return;
+			            } else {
+			                $.ajax({
+			                    url: "/User/CheckMsg",
+			                    data: { "mobile": $("#user_phone").val(), "checkValue": $("#txtValidateCode").val() },
+			                    success: function (data) {
+			                        if (data == "1") {
+			                            alert("验证成功,页面自动跳转...");
+			                            setTimeout(function () {
+			                                location.href = "/Login/SurePwd?code=" + $txtValidateCode1.val() + "&phone=" + $user_phone.val() + "&account=" + $user_account.val() + "&v=" + new Date().getTime();
+			                            }, 1500);
+			                        } else {
+			                            alert("验证码无效");
+			                            return;
+			                        }
+			                    }
+			                });
+			            }
+			        }
+			    })
+		</script>-->

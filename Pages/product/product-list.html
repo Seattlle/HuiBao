@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>慧宝购物</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/product.css" />
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="content">
+							<img src="../../images/index/jiezhi.png" alt="" id="head" />
+							<span id="name" class="overflowEllipsis">华尔兹科技有限公司</span>
+						</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell">
+								<a>
+									<span class="s_location icon"></span> 广东省深圳市罗湖区翠竹街道 东门北路1032号12楼
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a>
+									<span class="phone  icon"></span> 4000-560-510
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a>
+									<span class="light icon"></span> 诚信为立足之本，
+									<br> 创新为生存之源，
+									<br> 服务为永恒的主题。
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="book icon"></span> 品牌介绍
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="list icon"></span> 品牌文化
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+					<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>
+					<h1 class="mui-title">慧宝购物</h1>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!--搜索栏-->
+						<div class="s_search">
+							<div class="mui-input-row mui-search">
+								<input type="search" class="mui-input-clear" placeholder="钻石对戒">
+							</div>
+							<a href="#">
+								<!--<span class="icon s_menu"></span>-->
+								<img src="../../images/product/connect.png" />
+							</a>
+						</div>
+
+						<!--内容主体-->
+						<div class="main">
+							<!--条件-->
+							<ul class="classify border_t border_b">
+								<li>
+									<span>综合</span>
+									<select name="zh">
+										<option value="0">综合</option>
+										<option value="1">综合</option>
+									</select>
+								</li>
+								<li class="border_l">
+									<span>综合</span>
+									<select name="zh">
+										<option value="0">综合</option>
+										<option value="1">综合</option>
+									</select>
+								</li>
+								<li class="border_l">
+									<span>综合</span>
+									<select name="zh">
+										<option value="0">综合</option>
+										<option value="1">综合</option>
+									</select>
+								</li>
+								<li class="border_l">
+									<span>综合</span>
+									<select name="zh">
+										<option value="0">综合</option>
+										<option value="1">综合</option>
+									</select>
+								</li>
+								<li class="border_l">
+									<a id="more-filter">更多筛选</a>
+								</li>
+							</ul>
+							
+							<!--筛选条件-->
+							<ul class="filter">
+								<li class="border_b priceArea">
+									<span>价格区间</span>
+									<div>
+										<input type="number" name="minNum" />
+										-
+										<input type="number" name="maxNum" />
+									</div>
+								</li>
+								<li class="border_b weight">
+									<span>主石重</span>
+									<div>
+										<span class="mui-icon mui-icon-arrowdown"></span>
+									</div>
+									<p>
+										<em>0.1ct-0.3ct</em>
+										<em>0.1ct-0.3ct</em>
+										<em>0.1ct-0.3ct</em>
+										<em>0.1ct-0.3ct</em>
+									</p>
+								</li>
+								<li class="border_b color">
+									<span>颜色</span>
+									<div>
+										<span class="mui-icon mui-icon-arrowdown"></span>
+									</div>
+									<ul>
+										<li class="active">D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+									</ul>
+								</li>
+								<li class="border_b cut">
+									<span>切工</span>
+									<ul>
+										<li class="active">D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+									</ul>
+								</li>
+								<li class="border_b pure">
+									<span>净度</span>
+									<ul>
+										<li class="active">D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+										<li>D</li>
+									</ul>
+								</li>
+							</ul>
+							
+							<!--选中条件-->
+							<ul class="checked">
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+								<li>18K金<i></i></li>
+							</ul>
+							
+							<!--产品列表-->
+							<ul class="product">
+								<li>
+									<img src="../../images/product/product.png" />
+									<p>
+										<span class="ptitle overflowEllipsis">18K金钻石女戒0.5ct钻石女戒</span>
+										<span class="price">￥<em>4988.00</em></span>
+										<span class="count">库存:<em>600</em>件</span>
+										<span class="people"><em>2400</em>人购买</span>
+										<span class="source">深圳华尔兹科技有限公司</span>
+									</p>
+								</li>
+								<li>
+									<img src="../../images/index/ad.png" />
+									<p>
+										<span class="ptitle overflowEllipsis">18K金钻石女戒0.5ct钻石女戒</span>
+										<span class="price">￥<em>4988.00</em></span>
+										<span class="count">库存:<em>600</em>件</span>
+										<span class="people"><em>2400</em>人购买</span>
+										<span class="source">深圳华尔兹科技有限公司</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="bt_menu">
+							</span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<span class="bt_menu">
+							</span>
+						<span class="mui-tab-label">列表</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-sms">
+						<span class="bt_menu">
+							</span>
+						<span class="mui-tab-label">活动区</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="bt_menu">
+							</span>
+						<span class="mui-tab-label">购物车</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="bt_menu">
+							</span>
+						<span class="mui-tab-label">个人中心</span>
+					</a>
+				</nav>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init();
+			//自动轮播
+			mui("#slider").slider({
+				interval: 3000
+			});
+			//侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			//主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			//菜单容器
+			//			var offCanvasSide = document.getElementById("offCanvasSide");
+			//			if (!mui.os.android) {
+			//				document.getElementById("move-togger").classList.remove('mui-hidden');
+			//				var spans = document.querySelectorAll('.android-only');
+			//				for (var i = 0, len = spans.length; i < len; i++) {
+			//					spans[i].style.display = "none";
+			//				}
+			//			}
+			//移动效果是否为整体移动
+			var moveTogether = false;
+			moveTogether = true;
+			//整体滑动时，侧滑菜单在inner-wrap内
+			offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+			//侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+			//主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+			//实现ios平台原生侧滑关闭页面；
+			if (mui.os.plus && mui.os.ios) {
+				mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'none'
+					});
+				});
+			}
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".product img").each(function() {
+					$(this).css("height", $(this).width());
+				});
+				
+				$("#more-filter").on("tap",function(){
+					$(".filter").toggle(300);
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/user.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<!--				<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>-->
+				<h1 class="mui-title">收货地址</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+						<ul class="address">
+							<li class="normal">
+								<div>
+									<p>
+										<span>华尔兹</span>
+										<span>13411112222</span>
+									</p>
+									<p>
+										[默认]广东省深圳市罗湖区翠竹街道东门北路1032号丰 顺酒店12层
+									</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p>
+										<span>华尔兹</span>
+										<span>13411112222</span>
+									</p>
+									<p>
+										广东省深圳市罗湖区翠竹街道东门北路1032号丰 顺酒店12层
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			
+			<p class="add_address">
+				<a href="#">添加地址</a>
+			</p>			
+				
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			mui('#offCanvasContentScroll').scroll();
+		</script>
+	</body>
+
+</html>

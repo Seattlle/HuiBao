@@ -1,0 +1,414 @@
+/*广告区*/
+
+#ad {
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+#ad:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	border: 10px solid #FFFFFF;
+	border-top: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin-left: -10px;
+}
+
+#ad li {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	margin: 10px -3px;
+	color: #727272;
+	font-size: 1rem;
+}
+
+#ad li:nth-child(1) {
+	border-right: 1px solid #dddddd;
+}
+
+#ad li:nth-child(2) {
+	color: #e4393c;
+	border-right: 1px solid #dddddd;
+}
+
+
+/*分类按钮区*/
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn) {
+	padding: 5px 0;
+}
+
+#class_menu .mui-grid-view.mui-grid-9 {
+	background-color: #FFFFFF;
+}
+
+#class_menu .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	border: none;
+	padding: 11px 8px;
+}
+
+#class_menu .mui-media-body {
+	font-size: 1.1rem;
+	color: #272727;
+	margin-top: 3px;
+}
+
+.mui-table-view:after {
+	width: 100%;
+}
+
+#class_menu .mui-media .img {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+#class_menu .mui-media .img img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+#class_menu .mui-media .img .mui-badge {
+	position: absolute;
+	right: 10%;
+	top: 0;
+	color: #FFFFFF;
+	background-color: #f90a20;
+}
+
+
+/*新闻资讯*/
+
+#new {
+	padding: 11px 15px;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 1.4rem;
+}
+
+#new .h4 {
+	color: #d31459;
+	width: 22%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#new span:last-child {
+	color: #272727;
+	width: 75%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/*活动区域*/
+
+#activity {
+	margin-top: 11px;
+}
+
+#activity>li {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	background: url("../images/activity.jpg") no-repeat right center;
+	background-color: #ffffff;
+	background-size: auto 80%;
+	vertical-align: middle;
+}
+
+#activity>li:nth-child(2n) {
+	margin-left: -8px;
+}
+
+#activity>li:nth-child(2n):before {
+	left: 0px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	content: '';
+	-webkit-transform: scaleX(.5);
+	transform: scaleX(.5);
+	background-color: #c8c7cc;
+}
+
+#activity>li>div {
+	margin: 0 auto;
+	position: relative;
+	padding: 11px 6%;
+}
+
+#activity>li> div > h3 {
+	font-weight: 100;
+	line-height: 20px;
+	font-size: 1.7rem;
+	color: #d31459;
+}
+
+#activity>li:nth-child(2)> div > h3 {
+	color: #ff503e;
+}
+
+#activity>li:nth-child(3)> div > h3 {
+	color: #8cb914;
+}
+
+#activity>li:nth-child(4)> div > h3 {
+	color: #fbb90c;
+}
+
+#activity>li> div > .countdown {
+	height: 18px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+#activity>li> div > .countdown > span {
+	float: left;
+	margin-right: 3px;
+	font-size: 1.3rem;
+	color: #4C4C4C;
+}
+
+#activity>li> div > .countdown i {
+	position: relative;
+	float: left;
+	height: inherit;
+	width: 11px;
+	background-image: -moz-linear-gradient(top, #1a1a1a, #474747);
+	/* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1a1a1a), color-stop(1, #474747));
+	/* Saf4+, Chrome */
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1a1a1a', endColorstr='#474747', GradientType='0');
+	/* IE*/
+	margin-right: 3px;
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+#activity>li> div > .countdown i:nth-of-type(3n) {
+	background: none;
+	width: 5px;
+	color: #1f1f1f;
+	margin-right: 0;
+}
+
+#activity>li> div > .countdown i.no {
+	margin-right: 0;
+}
+
+#activity>li> div > .time {
+	color: #da4276;
+	font-size: 1.1rem;
+}
+
+#activity>li> div > .desc {
+	color: #9e9e9e;
+	font-size: 1.1rem;
+	padding-bottom: 22px;
+}
+
+
+/*广告图*/
+
+#ad_img {
+	margin: 0 auto;
+	margin: 11px 0;
+	padding: 0 1.6%;
+}
+
+#ad_img img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*热销榜*/
+
+.hot_h3 {
+	width: 100%;
+	font-size: 1.5rem;
+	color: #ff7527;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+}
+
+.hot_h3:before,
+.hot_h3:after {
+	position: absolute;
+	top: 20px;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+
+.hot_h3:before {
+	left: 3px;
+	right: 63%;
+}
+
+.hot_h3:after {
+	right: 3px;
+	left: 63%;
+}
+
+.hot_h3 .heart {
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 3px;
+	background: url(../images/index/heart.png) no-repeat;
+	background-size: 100% auto;
+}
+
+.hot_h3>div {
+	display: inline;
+	background-color: #efeff4;
+}
+
+#hot_list1,
+#hot_list2 {
+	width: 100%;
+	display: inline-block;
+}
+
+#hot_list2 {
+	margin-top: -3px;
+}
+
+#hot_list1>li,
+#hot_list2>li {
+	display: inline-block;
+	/*margin-left: -8px;*/
+	vertical-align: middle;
+	float: left;
+}
+
+#hot_list1>li:first-child {
+	width: 60%;
+}
+
+#hot_list1>li:last-child {
+	width: 40%;
+}
+
+#hot_list1>li>div:first-child {
+	width: 54%;
+	padding: 11px 3%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#hot_list1>li>div:last-child {
+	width: 40%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -1px;
+}
+
+#hot_list1>li:first-child>div:first-child {
+	width: 55%;
+	padding: 11px 5%;
+}
+
+#hot_list1>li h3 {
+	font-weight: 100;
+	line-height: 20px;
+	font-size: 1.7rem;
+	color: #8fc326;
+}
+
+#hot_list1>li .desc {
+	width: 100%;
+	display: block;
+	font-size: 1.2rem;
+	color: #999999;
+	padding-bottom: 23px;
+}
+
+#hot_list1>li a {
+	display: block;
+	line-height: 25px;
+	width: 50px;
+	text-align: center;
+	font-size: 1.2rem;
+	border-radius: 15px;
+	color: #FFFFFF;
+	background-color: #8fc326;
+}
+
+#hot_list2>li {
+	width: 20%;
+}
+
+#hot_list2>li>p {
+	text-align: center;
+	margin: 12px 0;
+	overflow: hidden;
+	font-size: 1.3rem;
+	color: #0f0f0f;
+	line-height: 18px;
+}
+
+#hot_list2>li>p em {
+	font-size: 1.2rem;
+	color: #e11515;
+}
+
+#hot_list2>li>p img {
+	display: block;
+	height: 45px;
+	width: 45px;
+	margin: 0 auto;
+}
+
+
+/*信息资讯*/
+
+.hot_h3_info:after {
+	right: 35px;
+	;
+}
+
+.hot_h3_info,
+.hot_h3 .mui-icon-arrowright {
+	color: #f92a29;
+}
+
+.hot_h3 .information {
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 3px;
+	background: url(../images/index/information.png) no-repeat;
+	background-size: 100% auto;
+}
+
+.hot_h3 .mui-icon-arrowright {
+	margin-top: 13px;
+	background-color: #f3f3f3;
+	padding-right: 8px;
+	position: absolute;
+	right: 0;
+	font-size: 1.2rem;
+}
+
+.hot_h3 .mui-icon-arrowright:before {
+	position: absolute;
+	right: 0;
+}

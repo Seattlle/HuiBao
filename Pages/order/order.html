@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>确认订单</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/order.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>
+				<h1 class="mui-title">确认订单</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+						<!--收货地址-->
+						<section class="address">
+							<div>
+								<div>
+									<p>
+										<span>收货人:<em>华尔兹</em></span>
+										<span>13411112222</span>
+									</p>
+									<p>
+										<span>收货地址:<em>广东省深圳市罗湖区翠竹街道东门北路1032号丰顺酒店12层</em></span>
+										<span>366207</span>
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<section class="o-main border_t border_b">
+							<!--产品-->
+							<div class="product border_b">
+								<img src="../../images/index/jiezhi.png" />
+								<div>
+									<div>
+										<span>18K金钻石女戒0.5ct钻石女戒18K金钻石女戒18K金钻石女戒0.5ct钻石女戒18K金钻石女戒</span>
+										<span>手寸:<em>16</em></span>
+									</div>
+									<div>
+										<span>￥<em>4988.00</em></span>
+										<span>×<em>1</em></span>
+									</div>
+								</div>
+							</div>
+							<!--购买数量-->
+							<div class="count border_b">
+								<span>购买数量</span>
+								<div class="mui-numbox" data-numbox-min="1" data-numbox-max="999">
+									<button class="mui-btn mui-btn-numbox-minus" type="button"></button>
+									<input class="mui-input-numbox" type="number" value="1">
+									<button class="mui-btn mui-btn-numbox-plus" type="button"></button>
+								</div>
+							</div>
+
+							<!--配送方式-->
+							<div class="delivery border_b">
+								<span>配送方式</span>
+								<a href="#" class="">
+									<span>顺丰快递</span>
+									<i class="mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</a>
+							</div>
+
+							<!--发票信息-->
+							<div class="delivery border_b">
+								<span>发票信息</span>
+								<a href="#" class="">
+									<span>否</span>
+									<i class="mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</a>
+							</div>
+
+							<!--备注-->
+							<div class="message">
+								<span>备注:</span>
+								<input type="text" />
+							</div>
+
+						</section>
+
+						<!--优惠劵-->
+						<section class="coupon border_t border_b">
+							<span>使用优惠卷<i class="mui-icon mui-icon-arrowdown"></i></span>
+
+							<div class="mui-checkbox">
+								<input name="checkbox1" value="Item 3" type="checkbox">
+							</div>
+
+						</section>
+
+					</div>
+
+				</div>
+				<section class="clearing">
+					<div class="mui-checkbox mui-left">
+						<input name="checkbox1" value="Item 3" type="checkbox">
+					</div>
+					<div>
+						<p>
+							<span>合计</span>
+							<em>不含运费</em>
+						</p>
+						<p>
+							￥<em>4988.00</em>
+						</p>
+					</div>
+					<a href="#">
+									结算(<em>1</em>)
+								</a>
+				</section>
+			</div>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			mui.init();
+			mui('#offCanvasContentScroll').scroll();
+			$(function(){
+				$(".product img").css("height",$(".product img").width());
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,264 @@
+#offCanvasContentScroll {
+	background-color: #FFFFFF;
+}
+
+
+/*搜索区*/
+
+.s_search>a {
+	padding: 13px 0;
+}
+
+.s_search>a img {
+	width: 45%;
+}
+
+.main {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+
+/*筛选区*/
+
+.classify {
+	height: 50px;
+	background: #fff;
+}
+
+.classify li {
+	position: relative;
+	overflow: hidden;
+	width: 20%;
+	height: 50px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 50px;
+	color: #000000;
+	float: left;
+	font-size: 1.3rem;
+}
+
+.classify li span {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+.classify li span:after {
+	content: "";
+	position: absolute;
+	top: 23px;
+	right: -10px;
+	width: 10px;
+	height: 10px;
+	background: url(../images/product/trangle.png) no-repeat;
+	background-size: 100% auto;
+}
+
+.classify li a {
+	color: #3884ff;
+}
+
+.classify li select {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	opacity: 0;
+	height: 100%;
+}
+
+.classify .border_l:before {
+	top: 10px;
+	bottom: 10px;
+}
+
+
+/*更多筛选*/
+
+.filter {
+	display: none;
+	width: 100%;
+	margin:0;
+	margin-bottom: 11px;
+}
+
+.filter>li {
+	padding: 11px 3%;
+	margin: 0 auto;
+	width: 100%;
+	line-height: 18px;
+}
+
+.filter li>span:first-child {
+	width: 20%;
+	color: #051b28;
+	font-size: 1.4rem;
+	display: inline-block;
+}
+
+.filter li div {
+	width: 80%;
+	text-align: right;
+	margin-left: -10px;
+	display: inline-block;
+}
+
+.filter li div input {
+	width: 35%;
+	height: 30px;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 0;
+	border:none;
+	background:#eeeeee;
+}
+.filter li div .mui-icon{
+	color:#999999;
+	font-size: 1.8rem;
+}
+
+.filter li p{
+	width:95%;
+	margin:0 auto;
+}
+.filter li p em{
+	padding:3px 5px;
+	color:#051b28;
+	font-size: 1rem;
+	background-color: #f5f5f5;
+	display: inline-block;
+	margin-top: 5px;
+	border-radius: 3px;
+}
+.filter li ul{
+	width:100%;
+}
+.filter li ul li{
+	width:18%;
+	text-align: center;
+	padding:7px 0;
+	margin-top: 7px;
+	margin-right: -3px;
+	color:#051b28;
+	display: inline-block;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+}
+.filter li ul li.active{
+	border:1px solid #ff7527;
+}
+/*选中条件*/
+
+.checked {
+	width: 94.8%;
+	margin: 0 2.6%;
+	border-bottom: 1px dashed #dddddd;
+}
+
+.checked li {
+	padding: 3px 16px 3px 5px;
+	margin: 5px 0;
+	margin-right: -3px;
+	display: inline-block;
+	color: #909090;
+	font-size: 1.3rem;
+	border-radius: 15px;
+	border: 1px solid #dddddd;
+	position: relative;
+}
+
+.checked li i {
+	padding: 5px;
+	content: "";
+	position: absolute;
+	top: 6px;
+	right: 3px;
+	background: url(../images/product/checked.png) no-repeat;
+	background-size: 10px 10px;
+}
+
+
+/*产品列表*/
+
+.product {
+	width: 94%;
+	margin: 11px 3%;
+}
+
+.product li {
+	width: 47%;
+	padding: 11px 2.5%;
+	border: 1px solid #dddddd;
+	display: inline-block;
+}
+
+.product li:nth-of-type(even) {
+	margin-left: 2.8%;
+}
+
+.product li img {
+	width: 100%;
+	height: auto;
+}
+
+.product li p {
+	width: 100%;
+	font-size: 1.1rem;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.product li p .ptitle {
+	width: 100%;
+	display: inline-block;
+	color: #3d3d3d;
+	font-size: 1.3rem;
+}
+
+.product li p .price {
+	color: #e4393c;
+	display: block;
+}
+
+.product li p .count {
+	color: #999999;
+}
+
+.product li p .people {
+	float: right;
+}
+
+.product li p .source {
+	display: block;
+}
+
+/*分类列表*/
+.class_style{
+	background: #F2F2F2;
+}
+.class_style .mui-grid-view.mui-grid-9{
+	margin-top: 11px;
+	background: #FFFFFF;
+}
+.class_style li img{
+	width:100%;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 1.6rem;
+	color:#3d3d3d;
+}
+
+
+
+
+
+
+
+
+

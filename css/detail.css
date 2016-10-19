@@ -1,0 +1,246 @@
+section {
+	width: 100%;
+	padding: 6px 2.5% 6px 5%;
+}
+
+
+/*基本信息*/
+
+.info {
+	font-size: 1.4rem;
+	line-height: 20px;
+	text-align: left;
+}
+
+.info .ptitle {
+	width: 100%;
+	display: inline-block;
+	color: #3d3d3d;
+}
+
+.info .price {
+	color: #e4393c;
+	display: block;
+}
+
+.info .count {
+	color: #999999;
+}
+
+.info .people {
+	color: #999999;
+	float: right;
+}
+
+
+/*属性选择*/
+
+.attr {
+	margin: 11px 0;
+}
+
+.attr ul {
+	width: 100%;
+}
+
+.attr ul li {
+	width: 100%;
+	font-size: 1.3rem;
+	margin-bottom: 8px;
+}
+
+.attr ul li:last-child {
+	margin-bottom: 0;
+}
+
+.attr ul li>span {
+	width: 15%;
+	display: inline-block;
+	vertical-align: middle;
+	color: #999999;
+	margin-right: -10px;
+}
+
+.attr ul li p {
+	width: 85%;
+	margin: 0;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.attr ul li p em {
+	position: relative;
+	padding: 10px 13px;
+	margin-right: 5px;
+	text-align: center;
+	color: #121212;
+	display: inline-block;
+	border: 1px solid #dddddd;
+}
+
+.attr ul li p .active {
+	border-color: #d91100;
+}
+
+.attr ul li p .active:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: url(../images/product/d_checked.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*数量控件*/
+
+.number {
+	background: #eeeeee;
+	position: relative;
+	display: block;
+	height: 30px;
+	width: 50%;
+	border: 1px solid #dddddd;
+}
+
+.number i {
+	width: 31.428%;
+	height: inherit;
+	float: left;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.number i.Sub {
+	background: url(../images/product/cut.png) no-repeat center;
+	background-size: 10px 2px;
+}
+
+.number i.con {
+	text-indent: 0;
+	border-radius: 0;
+	width: 37.144%;
+}
+
+.number i.Add {
+	background: url('../images/product/add.png') no-repeat center;
+	background-size: 10px;
+}
+
+.number i.con .value {
+	padding: 0;
+	height: 28px;
+	margin-bottom: 0;
+	border-bottom: none;
+	border-top: none;
+	border-radius: 0;
+	line-height: 28px;
+	text-align: center;
+	background: #ffffff;
+	color: #000000;
+	font-size: 1.7rem;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+/*公司*/
+
+.company {
+	line-height: 30px;
+}
+
+.company img {
+	width: 20%;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.company>span {
+	font-size: 1.2rem;
+	color: #333333;
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+}
+
+.company a {
+	color: #333333;
+	font-size: 1.4rem;
+	float: right;
+}
+
+.company a .mui-icon {
+	font-size: 1.4rem;
+	line-height: 30px;
+}
+
+
+/*商品介绍*/
+
+.introduction {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	color:#333333;
+	font-size: 1.4rem;
+	margin-top: 11px;
+}
+
+.introduction li {
+	width: 33%;
+	height: 38px;
+	text-align: center;
+	display: inline-block;
+	margin-right: -5px;
+}
+.introduction li:first-child{
+	border-right: 1px solid #dddddd;
+}
+.introduction li:last-child{
+	border-left: 1px solid #DDDDDD;
+}
+.introduction li.active{
+	color: #d91100;
+}
+
+
+
+/*底部按钮*/
+footer {height:50px;box-shadow: 0 -2px 4px rgba(227,227,227,.3);position:fixed;left:0;bottom:0;background:#fff}
+footer a{height:50px;float:left;box-sizing:border-box}
+footer a:first-of-type{border-right:1px solid #e6e6e6}
+footer a:nth-of-type(-n+2){width:20%;background:#fff}
+footer a:nth-of-type(n+3){width:30%;text-align:center;line-height:50px;color:#fff;font-size:.9375em}
+footer a:nth-of-type(3){background:#ec923a}
+footer a:last-of-type{background:#e53838}
+footer i {position:relative;margin:6px auto;display:block}
+footer .i-phone {background:url('../images/detial/contect.png') no-repeat;width:20px;height:20px;background-size:20px 20px }
+footer .i-collect {background:url('../images/detial/collect2.png');background-size:23px 22px;width:23px;height:22px;margin:5px auto;}
+footer i.cTrue {background:url('../images/detial/collect1.png');background-size:23px 22px;}
+footer a p {color:#808080;font-size:.7em;line-height:10px;width:100%;text-align:center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

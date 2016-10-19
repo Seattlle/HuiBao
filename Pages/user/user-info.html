@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/user.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>
+				<h1 class="mui-title">个人资料</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+						<ul class="info border_b border_t">
+							<li>
+								<span>用户头像</span>
+								<div>
+									<img src="../../images/index/椭圆 3.png"/>
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</div>
+							</li>
+							<li>
+								<span>用户姓名</span>
+								<div>
+									<span>Waltz_华尔兹</span>
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</div>
+							</li>
+							<li>
+								<span>手机号</span>
+								<div>
+									<span>13411112222</span>
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</div>
+							</li>
+							<li>
+								<span>推荐人</span>
+								<div>
+									<span>华尔兹</span>
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</div>
+							</li>
+							<li>
+								<span>我的收货地址</span>
+								<div>
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			mui('#offCanvasContentScroll').scroll();
+		</script>
+	</body>
+
+</html>

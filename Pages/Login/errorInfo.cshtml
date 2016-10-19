@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "errorInfo";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>pi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable = no,initial-scale = 1,minimum-scale =1,maximum-scale = 1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="~/css/base.css" />
+    <script src="~/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background: #fff;
+        }
+        section {
+        height:238px;
+        position:absolute;left:0
+        ;top:50%;
+         margin-top:-119px;
+        } .error-img {
+            display: block;
+            margin: 0 auto;
+            width: 140px;
+            height: 124px;
+        }
+
+        section p {
+            height: 70px;
+            text-align: center;
+            width: 100%;
+            line-height: 70px;
+            font-size: 1.0625em;
+            color: #7dc3fa;
+            margin-bottom: 14px;
+        }
+        section a {
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            color: #fff;
+            line-height: 30px;
+            font-size: .8125em;
+            display: block;
+            margin: 0 auto;
+            background: #7dc3fa;
+            border-radius:4px
+        }
+    </style>
+
+    <section>
+        <img class="error-img" src="~/images/login/error.png" />
+        <p>矮油，页面漂走了~</p>
+        <a class="lastgo" data-href="/Home/index?d=1">返回首页</a>
+    </section>
+    <script>
+        $('.lastgo').on("click", function () {
+            window.location.href = $(this).data("href") + "&v=" + new Date().getTime();
+        });
+    </script>
+</body>
+</html>

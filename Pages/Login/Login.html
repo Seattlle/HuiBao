@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable = no,initial-scale = 1,minimum-scale =1,maximum-scale = 1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<link href="../../css/login.css" rel="stylesheet" />
+	</head>
+
+	<body class="lr">
+		<div class="mui-inner-wrap">
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<form>
+						<img src="../../images/login/Welcome.png" class="logo">
+						<div class="input">
+							<input type="tel" id="user_phone" name="phone" placeholder="手机号" />
+						</div>
+						<div class="input">
+							<input type="password" id="user_pwd" name="pwd" placeholder="密码" />
+						</div>
+						<input type="button" id="SubLogin" value="立即登录" />
+						<p>
+							<a id="Login" class="lasgo" data-href="./Find_pwd.html?login=1">忘记密码?</a><i class="border-r"></i><a id="Register" class="lasgo" data-href="./Register.html?login=1">立即注册</a>
+						</p>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.8.2.min.js"></script>
+<script src="../../js/base.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/Encrypt.js"></script>
+<script>
+	//  $$("#SubLogin").on("click", function () {
+	//      var user_pwd = Encrypt($("#user_pwd").val()),
+	//          user_phone = $("#user_phone").val(),
+	//          returnUrl = window.location.search == "" ? "" : window.location.search.substr(3);
+	//      //base.isPhone($.trim($("#user_phone").val())) ? (function () {
+	//      if (user_phone != "" && $("#user_pwd").val() != "") {
+	//          maxShowLoading("正在登入");
+	//          $.ajax({
+	//              url: "/Login/SubLogin" + "?v=" + new Date().getTime(),
+	//              dataType: "json",
+	//              data: { "phone": user_phone, "pwd": user_pwd },
+	//              success: function (data) {
+	//                  //data = JSON.parse(data);
+	//                  if (data.result == 1) {
+	//                      if (returnUrl != "") {
+	//                          window.location.href = returnUrl;
+	//                      }
+	//                      else {
+	//                          window.location.href = "/Home/Index/" + "?v=" + new Date().getTime();
+	//                      }
+	//                  } else if (data.result == 2) {
+	//                      alert("手机号不存在！");
+	//                  } else if (data.result == 0) {
+	//                      $("#user_pwd").val("");
+	//                      alert("密码错误！");
+	//                  }
+	//              },
+	//              complete: function () {
+	//                  maxHideLoading();
+	//              }
+	//          });
+	//      } else if (user_phone == "") {
+	//          alert("账号不能为空！")
+	//      } else {
+	//          alert("密码不能为空！")
+	//      }
+	//  });
+</script>
+<script>
+	mui.init();
+	mui('#offCanvasContentScroll').scroll();
+</script>

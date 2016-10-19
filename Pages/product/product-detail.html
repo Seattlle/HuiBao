@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品详情</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/detail.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>
+				<h1 class="mui-title">商品详情</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+						<!--图片轮播-->
+						<div id="slider" class="mui-slider">
+							<div class="mui-slider-group mui-slider-loop">
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/yuantiao.jpg"></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg"></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/muwu.jpg"></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/cbd.jpg"></a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/yuantiao.jpg"></a>
+								</div>
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg"></a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+
+						<!--基础信息-->
+						<section class="info border_t border_b">
+							<span class="ptitle overflowEllipsis">18K金钻石女戒0.5ct钻石女戒18K金钻石女戒0.5ct钻石女戒...</span>
+							<span class="price">￥<em>4988.00</em></span>
+							<span class="count">库存：<em>600</em>件</span>
+							<span class="people"><em>600</em>人购买</span>
+						</section>
+
+						<!--属性选择-->
+						<section class="attr border_t border_b">
+							<ul>
+								<li>
+									<span>手寸:</span>
+									<p><em class="active">13</em><em>14</em></p>
+								</li>
+								<li>
+									<span>数量:</span>
+
+									<div class="mui-numbox" data-numbox-min="1" data-numbox-max="999">
+										<button class="mui-btn mui-btn-numbox-minus" type="button"></button>
+										<input class="mui-input-numbox" type="number" value="1">
+										<button class="mui-btn mui-btn-numbox-plus" type="button"></button>
+									</div>
+
+								</li>
+							</ul>
+						</section>
+
+						<!--公司-->
+						<section class="company border_t border_b">
+							<img src="../../images/login/btgl_logo.png" />
+							<span class="overflowEllipsis">深圳华尔兹科技有限公司</span>
+							<a href="#" class="">
+								进入店铺
+								<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+							</a>
+						</section>
+
+						<!--介绍-->
+						<ul class="introduction border_t border_b">
+							<li class="active">商品介绍</li>
+							<li>规格参数</li>
+							<li>同款推荐</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<footer>
+				<a id="addCollect">
+
+					<i class="i-collect"></i>
+					<p data-ctrue="0" class="collect">预约</p>
+				</a>
+				<a class="external" href="#" id="a_tel">
+					<i class="i-phone"></i>
+					<p>购物车</p>
+				</a>
+				<a class="addCar"><em>加入购物车</em></a>
+				<a class="BuyItNow"><em>立即购买</em></a>
+			</footer>
+
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			//自动轮播
+			mui("#slider").slider({
+				interval: 3000
+			});
+			mui('#offCanvasContentScroll').scroll();
+		</script>
+	</body>
+
+</html>

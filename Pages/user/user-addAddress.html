@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/user.css" />
+		<link href="../../css/mui.picker.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>
+				<h1 class="mui-title">新建收货地址</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main">
+						<ul class="addAddress">
+							<li>
+								<input type="text" class="name" placeholder="收件人姓名" />
+							</li>
+							<li>
+								<input type="number" class="phone" placeholder="手机号码/固定电话" />
+							</li>
+							<li>
+								<input type="number" class="code" placeholder="邮政编码" />
+							</li>
+							<li>
+								<input type="text" id="choseCity" placeholder="省、市、区"/>
+							</li>
+							<li>
+								<textarea class="stress" rows="3" cols="3"  placeholder="详细地址"></textarea>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<p class="saveAddress">
+				保存
+			</p>
+
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/mui.picker.min.js"></script>
+		<script src="../../js/mui.poppicker.js"></script>
+		<script src="../../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				mui('#offCanvasContentScroll').scroll();
+				$.ready(function() {
+					//级联示例
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('choseCity');
+					var cityResult3 = doc.getElementById('choseCity');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.value=(items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+
+	</body>
+
+</html>

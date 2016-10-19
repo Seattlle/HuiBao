@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/user.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<!--<a class="mui-action-back"><span class="mui-icon mui-icon-arrowleft"></span>返回</a>-->
+				<a class="mui-action-back mui-icon mui-icon-more mui-pull-right"></a>
+				<h1 class="mui-title">个人中心</h1>
+			</header>
+			<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--内容主体-->
+					<div class="main no-login">
+						<!--头像-->
+						<section class="head border_b">
+							<img src="../../images/index/椭圆 3.png" />
+							<div class="menu">
+								<span>您还没有登录</span>
+								<a href="#">点击登录</a>
+							</div>
+							<!--<div class="menu">
+								<div>
+									<span>Waltz_华尔兹</span>
+									<span>积分：<em>599</em></span>
+								</div>
+								<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+							</div>-->
+						</section>
+
+						<!--订单-->
+						<section class="order border_t border_b">
+							<div class="u-title border_b">
+								我的订单
+								<a href="#">
+									全部订单
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</a>
+							</div>
+							<ul class="orders">
+								<li>
+									<span>
+              						 <span class="mui-badge">5</span>
+									</span>
+									<span>待付款</span>
+								</li>
+
+								<li>
+									<span>
+										<span class="mui-badge">5</span>
+									</span>
+									<span>待收货</span>
+								</li>
+								<li>
+									<span>
+							           <span class="mui-badge">5</span>
+									</span>
+									<span>待评价</span>
+								</li>
+								<li>
+									<span>
+							               <span class="mui-badge">5</span>
+									</span>
+									<span>退款/售后</span>
+								</li>
+							</ul>
+						</section>
+
+						<!--钱包-->
+						<section class="wallet border_t border_b">
+							<div class="u-title border_b">
+								我的钱包
+								<a href="#">
+									<i class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></i>
+								</a>
+							</div>
+							<ul class="myWallet">
+								<li>
+									<span>0</span>
+									<span>账户余额</span>
+								</li>
+								<li>
+									<span>0</span>
+									<span>优惠劵</span>
+								</li>
+								<li>
+									<span>0</span>
+									<span>绑定银行卡</span>
+								</li>
+							</ul>
+						</section>
+
+						<!--活动-->
+						<section class="activity border_t border_b">
+							<div class="u-title border_b">
+								我的活动
+							</div>
+							<ul class="myActivity">
+								<li>
+									<span>积分兑换</span>
+								</li>
+								<li>
+									<span>预约</span>
+								</li>
+								<li>
+
+								</li>
+								<li>
+
+								</li>
+							</ul>
+						</section>
+
+						<!--预约到店-->
+						<section class="reserve border_t border_b">
+							<span>预约到店</span>
+						</section>
+
+						<!--养护提醒-->
+						<section class="remind border_t border_b">
+							<span>养护提醒</span>
+						</section>
+
+						<!--成为合伙人-->
+						<section class="partner border_t border_b">
+							<span>成为合伙人</span>
+						</section>
+					</div>
+				</div>
+
+			</div>
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#tabbar">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-chat">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">列表</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-sms">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">活动区</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-map">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-with-map">
+					<span class="bt_menu">
+							</span>
+					<span class="mui-tab-label">个人中心</span>
+				</a>
+			</nav>
+
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			mui('#offCanvasContentScroll').scroll();
+		</script>
+	</body>
+
+</html>
